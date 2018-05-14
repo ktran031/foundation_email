@@ -1,0 +1,66 @@
+table.body {
+  background-color: $primary-color;
+}
+
+.logo {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+h2, h3 {
+  background-color: $secondary-color;
+  padding: 5px 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin-bottom: 20px;
+  background-color: $primary-color;
+}
+
+.product {
+  background-color: $white;
+  padding-top: 20px;
+
+  .price {
+    padding-left: 20px;
+    font-size: 40px;
+    color: $purple;
+    font-weight: bold;
+  }
+  .button {
+    text-transform: uppercase;
+    float: right;
+    margin-right: 20px;
+    margin-top: 5px;
+  }
+}
+
+.menu-mobile {
+  display: none!important;
+}
+
+.menu-dekstop {
+  display: block!important;
+}
+
+.footer-text {
+  color: $white;
+  font-size: 18px;
+  padding-top: 20px;
+}
+
+/* Small only */
+@media only screen and (max-width: #{$global-breakpoint}) {
+  .footer-text {
+    text-align: center;
+  }
+  .menu-dekstop {
+    display: none!important;
+  }
+  .menu-mobile {
+    display: block!important;
+  }
+}
